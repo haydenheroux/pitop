@@ -20,6 +20,11 @@ class BuzzerLED(OnOffEr):
         self.led.on()
 
 
+    def off(self):
+        self.buzzer.off()
+        self.led.off()
+
+
 def pulse(on_off_er, duration):
     on_off_er.on()
     sleep(duration)
